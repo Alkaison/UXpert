@@ -5,6 +5,7 @@ export default {
     extend: {},
     fontFamily: {
       lobster: ["Lobster Two", "sans-serif"],
+      montserrat: ["Montserrat", "sans-serif"],
     },
   },
   plugins: [],

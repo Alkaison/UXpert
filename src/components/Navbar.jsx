@@ -5,8 +5,11 @@ function Navbar() {
   return (
     <div className="h-[80px] px-16 flex justify-between items-center">
       <div className="h-16 w-16  cursor-pointer">
-        <a href="/">
-          <img src={logo} alt="UXpert" className="h-16 w-16" />
+        <a href="/" className="flex items-center gap-0 font-lobster">
+          <img src={logo} alt="UXpert" className="h-16 w-16" />{" "}
+          <span className="text-2xl font-bold text-[#F24E1E] tracking-wider">
+            UX<span className="text-[#1D1D1D] font-montserrat">pert</span>
+          </span>
         </a>
       </div>
 
