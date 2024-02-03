@@ -4,7 +4,7 @@ import foundersTeam from "../assets/founders-team.png";
 function Invitation() {
   return (
     <div className="bg-[#F6F6F6] flex flex-col justify-center items-center gap-8">
-      <h3 className="mt-12 capitalize font-bold text-5xl max-w-[600px] text-center">
+      <h3 className="mt-16 capitalize font-bold text-5xl max-w-[600px] text-center">
         Let’s <span className="text-[#FF734F]">build</span> something{" "}
         <span className="text-[#FF734F]">Awesome</span> together!
       </h3>
