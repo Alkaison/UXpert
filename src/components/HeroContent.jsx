@@ -4,7 +4,10 @@ import devsTeam from "../assets/devs-team.png";
 
 function HeroContent() {
   return (
-    <div className="flex justify-center items-center flex-col w-full">
+    <div
+      className="flex justify-center items-center flex-col w-full"
+      role="main"
+    >
       <h1 className="max-w-[985px] mt-[50px] text-center text-[#1D1D1B] font-bold text-5xl capitalize">
         A UI/UX design subscription so{" "}
         <span className="text-[#FF734F]">good</span> it should come with a{" "}

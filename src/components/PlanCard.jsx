@@ -31,11 +31,15 @@ function PlanCard({
       </div>
 
       <div
-        className={`text-center w-[150px] mx-auto pt-4 pb-8 border-2 border-transparent text-[#FF734F] border-b-[#FF734F] mb-10 ${
+        className={`text-center w-[150px] mx-auto pt-4 pb-8 border-2 border-transparent border-b-[#FF734F] mb-10 ${
           isFeatured ? "border-b-[#ffffff] text-[#000000]" : ""
         }`}
       >
-        <h4 className="text-4xl font-bold text-nowrap tracking-wide">
+        <h4
+          className={`text-4xl font-bold text-nowrap tracking-wide ${
+            isFeatured ? "text-[#000000]" : "text-[#FF734F]"
+          }`}
+        >
           ${plansDiscountedPrice}
           {/* Render Original Amount - If Discount is given */}
           {planPrice !== plansDiscountedPrice && (
@@ -44,7 +48,14 @@ function PlanCard({
             </span>
           )}
         </h4>
-        <p className="mt-1 font-bold text-sm">PER MONTH</p>
+
+        <p
+          className={`mt-1 font-bold text-sm ${
+            isFeatured ? "text-[#000000]" : "text-[#FF734F]"
+          }`}
+        >
+          PER MONTH
+        </p>
       </div>
 
       <div className={`h-[240px] ${isFeatured ? "text-white" : ""} `}>

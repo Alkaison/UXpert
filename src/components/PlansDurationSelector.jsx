@@ -30,7 +30,7 @@ function PlansDurationSelector({
   handleCurrentPlanDurationUpdate,
 }) {
   return (
-    <div className="p-20 pb-10 w-full flex justify-center items-center">
+    <div className="py-20 pb-10 w-full flex justify-center items-center">
       <div className="h-[46px] border border-[#FF734F] rounded-lg">
         <PlansDurationSelectorButton
           duration="monthly"

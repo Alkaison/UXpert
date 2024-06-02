@@ -18,21 +18,23 @@ function PricingPlans() {
   };
 
   return (
-    <div className="p-10 flex flex-col justify-start items-center gap-5">
-      <PlansDurationSelector
-        currentPlanDuration={currentPlanDuration}
-        handleCurrentPlanDurationUpdate={handleCurrentPlanDurationUpdate}
-      />
+    <div className="flex justify-center" id="pricing">
+      <div className="py-10 px-6 w-full max-w-[1280px] flex flex-col justify-start items-center gap-5">
+        <PlansDurationSelector
+          currentPlanDuration={currentPlanDuration}
+          handleCurrentPlanDurationUpdate={handleCurrentPlanDurationUpdate}
+        />
 
-      {/* Plans Container */}
-      <div className="flex gap-10 flex-wrap">
-        {plansDetails.map((data) => (
-          <PlanCard
-            key={data.planName}
-            {...data}
-            discountRate={discountRate[currentPlanDuration]}
-          />
-        ))}
+        {/* Plans Container */}
+        <div className="flex gap-7 flex-wrap">
+          {plansDetails.map((data) => (
+            <PlanCard
+              key={data.planName}
+              {...data}
+              discountRate={discountRate[currentPlanDuration]}
+            />
+          ))}
+        </div>
       </div>
     </div>
   );
