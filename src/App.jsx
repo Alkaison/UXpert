@@ -1,6 +1,7 @@
 import React from "react";
 import Hero from "./containers/Hero";
 import HowWeOperate from "./containers/HowWeOperate";
+import HowWeWork from "./containers/HowWeWork";
 import Testimonials from "./containers/Testimonials";
 import Tips from "./containers/Tips";
 import Questions from "./containers/Questions";
@@ -13,6 +14,7 @@ function App() {
     <React.Fragment>
       <Hero />
       <HowWeOperate />
+      <HowWeWork />
       <Testimonials />
       <Tips />
       <Questions />
