@@ -3,7 +3,7 @@ import React from "react";
 function ContactUs() {
   return (
     <div className="p-10 flex flex-col justify-center items-center gap-4">
-      <h3 className="text-2xl font-bold inline-block text-center border-t-black border-2 pt-10">
+      <h3 className="text-2xl font-bold inline-block text-center border-t-black border-transparent border-2 pt-10">
         Hey! Need a custom plan?{" "}
         <span className="text-[#F86642]">Contact us!</span>
       </h3>
