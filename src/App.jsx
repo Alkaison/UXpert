@@ -3,6 +3,7 @@ import Hero from "./containers/Hero";
 import HowWeOperate from "./containers/HowWeOperate";
 import HowWeWork from "./containers/HowWeWork";
 import Testimonials from "./containers/Testimonials";
+import PricingPlans from "./containers/PricingPlans";
 import ContactUs from "./containers/ContactUs";
 import Tips from "./containers/Tips";
 import Questions from "./containers/Questions";
@@ -17,6 +18,7 @@ function App() {
       <HowWeOperate />
       <HowWeWork />
       <Testimonials />
+      <PricingPlans />
       <ContactUs />
       <Tips />
       <Questions />
