@@ -11,7 +11,7 @@ function PlansDurationSelectorButton({
   return (
     <button
       type="button"
-      className={`text-black font-bold tracking-wide uppercase h-[44px] px-4 py-2 relative ${className} ${
+      className={`text-black font-bold tracking-wide uppercase h-[44.5px] px-4 py-2 relative ${className} ${
         currentPlanDuration === duration ? "text-white bg-black" : ""
       }`}
       onClick={() => handleCurrentPlanDurationUpdate(duration)}
@@ -31,7 +31,7 @@ function PlansDurationSelector({
 }) {
   return (
     <div className="py-20 pb-10 w-full flex justify-center items-center">
-      <div className="h-[46px] border border-[#FF734F] rounded-lg">
+      <div className="h-[46px] border border-[#FF734F] rounded-[9px]">
         <PlansDurationSelectorButton
           duration="monthly"
           currentPlanDuration={currentPlanDuration}

@@ -10,7 +10,7 @@ function ContactUs() {
         </h3>
 
         <p className="text-black tracking-wide text-center">
-          Try us risk free for 7 days, if you don't love us, get your money
+          Try us risk free for 7 days, if you don&apos;t love us, get your money
           back.
         </p>
 

@@ -14,8 +14,8 @@ function HowWeOperate() {
         </h2>
 
         <p className="text-black text-center max-w-[850px]">
-          From ideation to expansion, TDP understands the unique demands of your
-          startup—providing you with optimized design strategies and fast
+          From ideation to expansion, UXpert understands the unique demands of
+          your startup—providing you with optimized design strategies and fast
           turnarounds for an affordable monthly subscription.
         </p>
 

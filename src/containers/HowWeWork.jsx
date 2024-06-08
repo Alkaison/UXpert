@@ -13,11 +13,11 @@ function HowWeWork() {
         </h2>
 
         <p className="text-black text-center max-w-[1000px]">
-          Take a minute to imagine how you'd feel watching your user count grow,
-          and retention rates stay consistently high. When you prioritize
+          Take a minute to imagine how you&apos;d feel watching your user count
+          grow, and retention rates stay consistently high. When you prioritize
           effective UX, better retention and growth are natural consequences.
-          Backed by countless hours of research and testing, TDP blends UX, UI,
-          and Product design into a deliciously smooth process that fuels
+          Backed by countless hours of research and testing, UXpert blends UX,
+          UI, and Product design into a deliciously smooth process that fuels
           productivity and success.
         </p>
 

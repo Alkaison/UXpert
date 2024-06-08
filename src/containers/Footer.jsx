@@ -16,21 +16,21 @@ function Footer() {
             <div className="flex gap-4 items-center cursor-pointer">
               <img src={emailIcon} alt="Email Icon" />{" "}
               <span className="border-[#1D1D1D] hover:text-[#FF734F] border-b hover:border-[#FF734F] transition-all">
-                hello@designproject
+                <a href="https://github.com/Alkaison">hello@designproject</a>
               </span>
             </div>
 
             <div className="flex gap-4 items-center cursor-pointer">
               <img src={instagramIcon} alt="Instagram Icon" />{" "}
               <span className="border-[#1D1D1D] hover:text-[#FF734F] border-b hover:border-[#FF734F] transition-all">
-                @designproject
+                <a href="https://github.com/Alkaison">@designproject</a>
               </span>
             </div>
 
             <div className="flex gap-4 items-center cursor-pointer">
               <img src={linkedinIcon} alt="LinkedIn Icon" />{" "}
               <span className="border-[#1D1D1D] hover:text-[#FF734F] border-b hover:border-[#FF734F] transition-all">
-                The Design Project
+                <a href="https://github.com/Alkaison">The Design Project</a>
               </span>
             </div>
           </div>
@@ -51,7 +51,7 @@ function Footer() {
               <a href="#pricing">PRICING</a>
             </li>
             <li className="hover:text-[#FF734F] cursor-pointer transition-all uppercase font-bold">
-              <a href="#faq">FAQ's</a>
+              <a href="#faq">FAQ&apos;s</a>
             </li>
           </ul>
         </div>

@@ -60,7 +60,7 @@ function PlanCard({
 
       <div className={`h-[240px] ${isFeatured ? "text-white" : ""} `}>
         <h4 className="text-base font-bold uppercase px-10 mb-1">
-          WHAT'S INCLUDED:
+          WHAT&apos;S INCLUDED:
         </h4>
         {feature.map((data) => (
           <p key={data} className="text-base font-medium px-14 py-1">

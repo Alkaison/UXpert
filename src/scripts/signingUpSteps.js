@@ -12,13 +12,13 @@ export const signingUpSteps = [
   {
     title: "Meet your perfect match",
     description:
-      "We match you with the best TDP design expert for your needs. Then we schedule a call to learn about your startup.",
+      "We match you with the best UXpert design expert for your needs. Then we schedule a call to learn about your startup.",
     src: signingUpStep2,
   },
   {
     title: "The first sprint begins (hold on tight)",
     description:
-      "TDP manages the project, learns the intimate details of what your users want, and delivers impactful design iterations.",
+      "UXpert manages the project, learns the intimate details of what your users want, and delivers impactful design iterations.",
     src: signingUpStep3,
   },
 ];

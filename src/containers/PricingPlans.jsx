@@ -11,7 +11,7 @@ const discountRate = {
 };
 
 function PricingPlans() {
-  const [currentPlanDuration, setCurrentPlanDuration] = useState("monthly");
+  const [currentPlanDuration, setCurrentPlanDuration] = useState("quarterly");
 
   const handleCurrentPlanDurationUpdate = (value) => {
     setCurrentPlanDuration(value);

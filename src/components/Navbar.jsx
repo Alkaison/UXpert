@@ -30,7 +30,7 @@ function Navbar() {
           <a href="#pricing">PRICING</a>
         </li>
         <li className="hover:text-[#FF734F] hover:cursor-pointer transition-colors duration-300">
-          <a href="#faq">FAQ's</a>
+          <a href="#faq">FAQ&apos;s</a>
         </li>
       </ul>
 
