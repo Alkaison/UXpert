@@ -24,7 +24,9 @@ function Question({ question, answer }) {
         onClick={handleQuestionClick}
         className="pb-1 flex items-center justify-between border-b-2 border-[#F24E1E] hover:text-[#F24E1E] transition-all duration-200"
       >
-        <p className="font-bold text-xl tracking-wide">{question}</p>
+        <p className="font-bold text-xl tracking-wide max-[768px]:text-lg">
+          {question}
+        </p>
         <img
           src={downArrow}
           alt="arrow icon"
