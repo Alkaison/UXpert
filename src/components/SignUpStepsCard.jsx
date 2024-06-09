@@ -2,7 +2,7 @@ import React from "react";
 
 function SignUpStepsCard({ index, title, description, src }) {
   return (
-    <div className="flex flex-col justify-center items-stretch gap-3 text-center">
+    <div className="w-[350px] flex flex-col justify-center items-stretch gap-3 text-center max-[420px]:w-full">
       <div
         className="w-[60px] h-[60px] mx-auto text-white rounded-full flex justify-center items-center text-2xl tracking-wide"
         style={{ background: "linear-gradient(#FF734F 0%, #E83C11 100%)" }}

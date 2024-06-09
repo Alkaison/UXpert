@@ -1,10 +1,17 @@
-import React from "react";
+import React, { useState } from "react";
 import logo from "../assets/logo.svg";
+import "../assets/hamburgers.css";
 
 function Navbar() {
+  const [isNavActive, setIsNavActive] = useState(false);
+
+  const handleNavButtonClick = () => {
+    setIsNavActive(!isNavActive);
+  };
+
   return (
     <div
-      className="h-[80px] flex justify-between items-center"
+      className="h-[80px] flex justify-between items-center gap-6"
       role="navigation"
     >
       <div className="h-16 cursor-pointer">
@@ -16,30 +23,66 @@ function Navbar() {
         </a>
       </div>
 
-      <ul className="flex items-center gap-[36px] text-black font-bold tracking-wide">
-        <li className="hover:text-[#FF734F] hover:cursor-pointer transition-colors duration-300">
+      <ul className="flex items-center gap-[36px] text-black font-bold tracking-wide max-[950px]:hidden">
+        <li className="hover:text-[#FF734F] hover:cursor-pointer transition-colors duration-300 text-nowrap">
           <a href="#operations">HOW IT WORKS</a>
         </li>
-        <li className="hover:text-[#FF734F] hover:cursor-pointer transition-colors duration-300">
+        <li className="hover:text-[#FF734F] hover:cursor-pointer transition-colors duration-300 text-nowrap">
           <a href="#about">ABOUT</a>
         </li>
-        <li className="hover:text-[#FF734F] hover:cursor-pointer transition-colors duration-300">
+        <li className="hover:text-[#FF734F] hover:cursor-pointer transition-colors duration-300 text-nowrap">
           <a href="#work">WORK</a>
         </li>
-        <li className="hover:text-[#FF734F] hover:cursor-pointer transition-colors duration-300">
+        <li className="hover:text-[#FF734F] hover:cursor-pointer transition-colors duration-300 text-nowrap">
           <a href="#pricing">PRICING</a>
         </li>
-        <li className="hover:text-[#FF734F] hover:cursor-pointer transition-colors duration-300">
+        <li className="hover:text-[#FF734F] hover:cursor-pointer transition-colors duration-300 text-nowrap">
           <a href="#faq">FAQ&apos;s</a>
         </li>
       </ul>
 
       <button
         type="button"
-        className="h-11 px-6 text-white font-bold tracking-wider bg-[#F86642] rounded-lg flex items-center hover:bg-[#F6F6F6] hover:text-[#F86642] duration-150 border-2 border-[#E0EAF3] hover:border-[#F86642] active:scale-95 transition-all"
+        className="h-11 px-6 text-white text-nowrap font-bold tracking-wider bg-[#F86642] rounded-lg flex items-center hover:bg-[#F6F6F6] hover:text-[#F86642] duration-150 border-2 border-[#E0EAF3] hover:border-[#F86642] active:scale-95 transition-all max-[950px]:hidden"
       >
         GET STARTED
       </button>
+
+      {/* Mobile Nav Humburger Icon */}
+      <button
+        type="button"
+        className={`hamburger hamburger--emphatic ${
+          isNavActive ? "is-active" : ""
+        } min-[950px]:hidden`}
+        onClick={handleNavButtonClick}
+      >
+        <span className="hamburger-box">
+          <span className="hamburger-inner"></span>
+        </span>
+      </button>
+
+      {/* Mobile Nav */}
+      {isNavActive && (
+        <div className="min-h-[100%] w-full bg-[#E0EAF3] absolute top-[80px] left-0 min-[950px]:hidden">
+          <ul className="flex flex-col items-center gap-8 text-2xl font-bold text-[#1D1D1D] tracking-wider mt-16 pb-20">
+            <li className="hover:text-[#FF734F]" onClick={handleNavButtonClick}>
+              <a href="#operations">HOW IT WORKS</a>
+            </li>
+            <li className="hover:text-[#FF734F]" onClick={handleNavButtonClick}>
+              <a href="#about">ABOUT</a>
+            </li>
+            <li className="hover:text-[#FF734F]" onClick={handleNavButtonClick}>
+              <a href="#work">WORK</a>
+            </li>
+            <li className="hover:text-[#FF734F]" onClick={handleNavButtonClick}>
+              <a href="#pricing">PRICING</a>
+            </li>
+            <li className="hover:text-[#FF734F]" onClick={handleNavButtonClick}>
+              <a href="#faq">FAQ&apos;s</a>
+            </li>
+          </ul>
+        </div>
+      )}
     </div>
   );
 }

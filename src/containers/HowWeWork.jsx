@@ -5,8 +5,8 @@ import SignUpStepsCard from "../components/SignUpStepsCard";
 function HowWeWork() {
   return (
     <div className="flex justify-center" id="operations">
-      <div className="py-10 px-6 pb-20 max-w-[1280px] flex flex-col justify-center items-center gap-10">
-        <h2 className="text-black font-bold text-4xl capitalize text-center max-w-[1000px]">
+      <div className="py-10 px-6 pb-20 max-w-[1440px] flex flex-col justify-center items-center gap-10 max-[768px]:gap-8">
+        <h2 className="text-black font-bold text-4xl capitalize text-center max-w-[1000px] max-[768px]:text-3xl">
           How <span className="text-[#FF734F] capitalize">Signing Up</span> with
           The Design Project{" "}
           <span className="text-[#FF734F] capitalize">Works</span> !?
@@ -21,7 +21,7 @@ function HowWeWork() {
           productivity and success.
         </p>
 
-        <div className="mt-10 w-full flex items-start justify-center gap-10">
+        <div className="mt-10 w-full flex items-start justify-center gap-8 flex-wrap max-[768px]:mt-6">
           {signingUpSteps.map((data, index) => (
             <SignUpStepsCard key={data.title} index={index + 1} {...data} />
           ))}

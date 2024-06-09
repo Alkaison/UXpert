@@ -17,7 +17,7 @@ function PlanCard({
     <div
       className={`w-[380px] h-[800px] border-2 border-[#FF734F] rounded-2xl ${
         isFeatured ? "border-[#000000] border-3 bg-[#FF734F]" : ""
-      }`}
+      } max-[450px]:w-full max-[450px]:px-4 max-[450px]:min-h-[800px] max-[450px]:h-auto`}
     >
       <div
         className={`text-center w-full py-12 h-[160px] ${
@@ -58,23 +58,29 @@ function PlanCard({
         </p>
       </div>
 
-      <div className={`h-[240px] ${isFeatured ? "text-white" : ""} `}>
-        <h4 className="text-base font-bold uppercase px-10 mb-1">
+      <div
+        className={`h-[240px] ${
+          isFeatured ? "text-white" : ""
+        } max-[450px]:min-h-[240px] max-[450px]:h-auto max-[450px]:my-4`}
+      >
+        <h4 className="text-base font-bold uppercase px-6 mb-1">
           WHAT&apos;S INCLUDED:
         </h4>
         {feature.map((data) => (
-          <p key={data} className="text-base font-medium px-14 py-1">
+          <p key={data} className="text-base font-medium px-10 py-1">
             {data}.
           </p>
         ))}
       </div>
 
-      <div className={`mt-5 ${isFeatured ? "text-white" : ""}`}>
-        <h4 className="text-base font-bold uppercase px-10 mb-1">
-          Design Team
-        </h4>
+      <div
+        className={`mt-5 ${
+          isFeatured ? "text-white" : ""
+        } max-[450px]:h-auto max-[450px]:my-4`}
+      >
+        <h4 className="text-base font-bold uppercase px-6 mb-1">Design Team</h4>
         {designFeatures.map((data) => (
-          <p key={data} className="text-base font-medium px-14 py-1">
+          <p key={data} className="text-base font-medium px-10 py-1">
             {data}.
           </p>
         ))}
@@ -84,7 +90,7 @@ function PlanCard({
         type="button"
         className={`border-2 border-black w-[280px] mx-auto mt-3 p-4 flex items-center justify-center gap-2 rounded-2xl active:scale-90 duration-300 transition-[transform] ${
           isFeatured ? "border-white text-white" : ""
-        }`}
+        } max-[450px]:w-full max-[450px]:my-4`}
       >
         TRY FREE{" "}
         <img

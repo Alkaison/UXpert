@@ -10,16 +10,16 @@ function TestimonialSlider() {
         <img
           src={startQuote}
           alt="Start Quote Mark"
-          className="absolute w-[50px] h-[50px] top-[-16px] left-[-60px]"
+          className="absolute w-[50px] h-[50px] top-[-16px] left-[-60px]  max-[900px]:w-[32px]  max-[900px]:h-[32px]  max-[900px]:left-[-28px]"
         />
 
         <img
           src={endQuote}
           alt="End Quote Mark"
-          className="absolute w-[50px] h-[50px] bottom-[-24px] right-5"
+          className="absolute w-[50px] h-[50px] bottom-[-24px] right-5  max-[900px]:w-[32px]  max-[900px]:h-[32px]  max-[900px]:bottom-[-8px]"
         />
 
-        <p className="max-w-[700px] text-white text-center font-bold text-3xl">
+        <p className="max-w-[700px] text-white text-center font-bold text-3xl max-[900px]:text-2xl max-[900px]:max-w-[500px]  max-[768px]:text-xl  max-[450px]:text-lg">
           UXpert helped identify the main pain points and designed a new UX that
           is accessible and easy to understand. The redesign pushed us forward
           on our mission to be able to verify 100% of IDs in real-time, and we

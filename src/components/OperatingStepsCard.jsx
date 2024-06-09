@@ -2,7 +2,7 @@ import React from "react";
 
 function OperatingStepsCard({ src, title, description }) {
   return (
-    <div className="w-[375px] flex flex-col items-center justify-center gap-3 text-center ">
+    <div className="w-[350px] flex flex-col items-center justify-center gap-3 text-center max-[450px]:w-full">
       <img
         src={src}
         alt={title}

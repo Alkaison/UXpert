@@ -7,7 +7,7 @@ function Hero() {
   return (
     <>
       <div className="bg-[#E0EAF3] flex justify-center">
-        <div className="max-w-[1280px] w-full px-6">
+        <div className="max-w-[1440px] w-full px-6">
           <Navbar />
           <HeroContent />
         </div>
