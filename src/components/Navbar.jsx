@@ -6,6 +6,7 @@ function Navbar() {
   const [isNavActive, setIsNavActive] = useState(false);
 
   const handleNavButtonClick = () => {
+    document.body.style.overflow = isNavActive ? "auto" : "hidden";
     setIsNavActive(!isNavActive);
   };
 
