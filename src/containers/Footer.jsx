@@ -5,7 +5,7 @@ import instagramIcon from "../assets/instagram-icon.svg";
 
 function Footer() {
   return (
-    <div className="flex justify-center bg-[#1D1D1D] text-white">
+    <div className="flex flex-col items-center bg-[#1D1D1D] text-white w-full">
       <div className="h-[400px] max-w-[1440px] px-6 w-full flex justify-around items-center max-[850px]:flex-col max-[850px]:items-start max-[850px]:justify-between max-[850px]:gap-12 max-[850px]:py-10 max-[850px]:h-auto">
         <div className="flex flex-col gap-12 max-[850px]:gap-6">
           <h3 className="font-lobster font-bold text-5xl">
@@ -55,6 +55,12 @@ function Footer() {
             </li>
           </ul>
         </div>
+      </div>
+      <div className="py-6 text-center text-sm border-t border-[#333333] w-full mt-auto">
+        © 2026 UXpert. All rights reserved. Built by{" "}
+        <a href="https://github.com/Alkaison" target="_blank" rel="noopener noreferrer" className="hover:text-[#FF734F] transition-all underline">
+          Ganesh Maurya
+        </a>.
       </div>
     </div>
   );
